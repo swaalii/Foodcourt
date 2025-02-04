@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Court</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+        .row1{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(240, 237, 68);
+            text-align: center;
+        }
+        .col1 input{
+            padding: 20px;
+            background-color:azure;
+            border: 0;
+            width: 400px;
+            border-radius: 20px;
+        }
+        .col1 input:hover{
+            background-color: rgb(178, 255, 91);
+        }
+        .col1 h1{
+            color: rgb(76, 10,10);
+            margin: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .col1 h1:hover{
+            color: rgb(7, 106, 34);
+        }
+        .col1 h2{
+            color: rgb(110,15,15);
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+        #header{
+            width: 100%;
+            height: 70px;
+            position: fixed;
+            top: 0px;
+            background-color: rgb(76, 10,10);
+        }
+        #navbar{
+            display: flex;
+            justify-content: space-between;
+        }
+        #navbar h1{
+            color: rgb(178, 255, 91);
+            margin: 10px 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #navbar ul{
+            display: flex;
+        }
+        #navbar ul li{
+            list-style: none;
+            margin: 20px 10px;
+            padding: 10px;
+            color: rgb(178, 255, 91);
+        }
+        #navbar h1:hover{
+            text-shadow: 3px 3px 3px rgb(178, 255, 91);
+        }
+        #navbar ul li:hover{
+            color: antiquewhite;
+            text-shadow: 4px 4px 4px rgb(61, 3, 3);
+        }
+        h1{
+            text-align: center;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            
+        }
+        .menu img{
+            width: 280px;
+            height: 200px;
+            margin: 10px;
+            border-radius: 30px;
+        }
+        .menu h3{
+            text-align: center;
+            padding-top: 20px;
+        }
+        .menu button{
+            background-color: black;
+            color: aliceblue;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px wheat;
+        }
+        .menu button:hover{
+            background-color: beige;
+            color: rgb(61, 3, 3);
+        }
+        .menu{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .about{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .about p{
+            width: 500px;
+            text-align: justify;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="row1">
+        <div class="col1">
+            <h1>Food Court</h1>
+            <h2>Best Quality and Tasty Food Point</h2>
+            <label for=""><i class="fa-solid fa-magnifying-glass"></i></label>
+            <input type="text" placeholder="Search">
+        </div>
+    </div>
+    <header>
+        <div id="header">
+        <nav id="navbar">
+            <h1>Food Court</h1>
+            <ul>
+                <li><a href=""></a>Home</li>
+                <li><a href=""></a>Menu</li>
+                <li><a href=""></a>About</li>
+                <li><a href=""></a>Contact</li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <section>
+        <h1>Menu</h1>
+        <div class="menu">
+            <div class="d1">
+                <img src="burger.jpg" alt="">
+                <h3>Burger</h3>
+                <button>Order</button>
+            </div>
+            <div class="d1">
+                <img src="Pizza.jpg" alt="">
+                <h3>Pizza</h3>
+                <button>Order</button>
+            </div>
+            <div class="d1">
+                <img src="Biriyani.webp" alt="">
+                <h3>Biriyani</h3>
+                <button>Order</button>
+            </div>
+            <div class="d1">
+                <img src="Platter.jpg" alt="">
+                <h3>Platter</h3>
+                <button>Order</button>
+            </div>
+            <div class="d1">
+                <img src="steak.jpg" alt="">
+                <h3>Beef Steak</h3>
+                <button>Order</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>About</h1>
+        <div class="about">
+            <div class="des">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sit iure architecto qui cumque culpa consequuntur, cum non ut doloremque dolores ea ab nihil beatae incidunt modi harum velit commodi.</p>
+            </div>
+            <div class="img">
+                <img src="foodcourt.jpg" alt=""
+                width="600px" height="500px">
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+</html>
